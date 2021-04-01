@@ -5,6 +5,8 @@ main:
     sll     $t1, $t1, 16            # $t1 = 0xDEAD0000
     ori     $t1, $t1, 0xBEEF        # $t1 = 0xDEADBEEF
 
+    # I didn't know the we are allowed to use add/addi to make Loop.
+    # So I try to think of a workaround with nor and sll instructions.
     nor     $a0, $a0, $zero         # set i = 8
     jal		REVERSE				    # jump to REVERSE and save position to $ra
 

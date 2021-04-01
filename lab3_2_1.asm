@@ -13,11 +13,3 @@ main:
     sll     $t8, $t7, 1
 
     jr		$ra					# EXIT
-    
-    
-
-
-
-
-
-
